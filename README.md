@@ -17,14 +17,15 @@ $ git clone https://github.com/mranonymz/android-kernel-tools.git tools
 	PATH="tools/build-tools/path/linux-x86:$PATH"
 	PATH="tools/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:$PATH"
 	PATH="tools/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:$PATH"
-	PATH="tools/clang/host/linux-x86/**clang-r353983d**/bin:$PATH"
+	PATH="tools/clang/host/linux-x86/**clang-r407598**/bin:$PATH"
 	PATH="tools/misc/linux-x86/lz4:$PATH"
 	PATH="tools/misc/linux-x86/dtc:$PATH"
 	PATH="tools/misc/linux-x86/libufdt:$PATH"
-	export LD_LIBRARY_PATH="tools/clang/host/linux-x86/**clang-r353983d**/lib64:$LD_LIBRARY_PATH"
+	export LD_LIBRARY_PATH="tools/clang/host/linux-x86/**clang-r407598**/lib64:$LD_LIBRARY_PATH"
 ```
 >> Here clang-r353983d for AOSP clang 9.0.4
 >> and clang-r399163b for AOSP clang 11.0.5.
+>> and clang-r407598 for AOSP clang 12.0.1.
 3. Use these command for compiling with **clang**.
 ```bash
 $ make \
